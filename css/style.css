@@ -1,22 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --mainTextColor: #000;
-  --secondaryTextColor: rgb(51 51 51);
-  --mainLinkColor: #0da2b8;
-  --mainBorderColor: rgb(218, 218, 218);
-  --mainBgColor: rgb(249, 250, 251);
+  /* Light Mode */
+
+  --mainTextColor-light: #000;
+  --secondaryTextColor-light: rgb(51 51 51);
+  --mainLinkColor-light: #0da2b8;
+  --mainBorderColor-light: rgb(218, 218, 218);
+  --mainBgColor-light: rgb(249, 250, 251);
+
+  /* Dark Mode */
+
+  --mainTextColor-dark: #fff;
+  --secondaryTextColor-dark: #adb0b1;
+  --mainLinkColor-dark: rgb(30, 190, 214);
+  --mainBorderColor-dark: #2b3031;
+  --mainBgColor-dark: #131415;
+
+  /* Applied  */
+
+  --mainTextColor: var(--mainTextColor-dark);
+  --secondaryTextColor: var(--secondaryTextColor-dark);
+  --mainLinkColor: var(--mainLinkColor-dark);
+  --mainBorderColor: var(--mainBorderColor-dark);
+  --mainBgColor: var(--mainBgColor-dark);
 }
 
 * {
-  font-family: 'Readex Pro';
-  line-height: 1.5em;
   box-sizing: border-box;
-  color: var(--mainTextColor);
 }
 
 body {
+  font-family: 'Readex Pro', sans-serif;
   background-color: var(--mainBgColor);
+  color: var(--mainTextColor);
+  line-height: 1.5em;
 }
 
 p,
@@ -77,15 +95,15 @@ a {
 #socials--list {
   display: flex;
   justify-content: space-between;
-  column-gap: 1em;
   flex-wrap: wrap;
+  /* column-gap: 1em; */
 }
 
 #socials--list a {
   font-weight: 300;
   color: var(--secondaryTextColor);
   font-size: 0.9em;
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 
 #socials--list a:hover {
@@ -96,4 +114,46 @@ a {
 
 #qualifications--list {
   list-style: none;
+}
+
+#wrapper--techstack__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 0.9em;
+}
+
+.card--techstack {
+  border: 1px solid var(--mainBorderColor);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  align-items: center;
+}
+
+.card--work-history {
+  border-left: 1px solid var(--mainBorderColor);
+  margin: 3em 0;
+  padding-left: 2em;
+}
+
+.line-break {
+  background-color: var(--mainBorderColor);
+  height: 1px;
+}
+
+@media (max-width: 600px) {
+  #wrapper--hero {
+    gap: 1em;
+    flex-direction: column;
+  }
+
+  #profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .card--work-history {
+    border-left: none;
+    padding-left: 0;
+  }
 }
