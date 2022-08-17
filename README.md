@@ -14,4 +14,6 @@ yarn start
 
 ### Demo
 
+![resume](https://user-images.githubusercontent.com/78271602/185195284-6ceb4eee-3abc-498b-bab1-0702d04dba60.png)
+
 https://apicgg.github.io/digital-resume/
