@@ -578,11 +578,6 @@ video {
   margin-bottom: 3rem;
 }
 
-.my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .flex{
   display: flex;
 }
@@ -708,6 +703,11 @@ video {
   font-weight: 300;
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-secondaryTextColorDark{
   --tw-text-opacity: 1;
   color: rgb(173 176 177 / var(--tw-text-opacity));
@@ -719,11 +719,6 @@ video {
 }
 
 .text-mainTextColorDark{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
