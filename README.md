@@ -16,8 +16,12 @@ yarn
 yarn start
 ```
 
-### Demo
+### Demo - Light Theme
 
-![resume](https://user-images.githubusercontent.com/78271602/185195284-6ceb4eee-3abc-498b-bab1-0702d04dba60.png)
+![demo-light](https://user-images.githubusercontent.com/78271602/185386776-d1bab992-30c1-443c-b56e-ebcffe61bf96.png)
 
-https://apicgg.github.io/digital-resume/
+## Dark Theme
+
+![demo-dark](https://user-images.githubusercontent.com/78271602/185386816-97207c1a-b694-411c-b70a-df2689f729b8.png)
+
+[Digital Resume](https://apicgg.github.io/digital-resume/)
