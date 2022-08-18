@@ -6,11 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <link rel="stylesheet" href="css/main.css" />
-    <!-- <script type="module" src="/main.js" defer></script> -->
+    <script type="module" src="/main.js" defer></script>
     <title>Anurag Pramanik</title>
   </head>
-  <body>
+  <body class="bg-mainBgColorLight dark:bg-mainBgColorDark">
+    <!-- Main -->
     <main class="max-w-[700px] mx-auto p-4">
+      <!-- Theme Switch -->
+      <div class="flex justify-end items-center space-x-2">
+        <span class="text-sm text-gray-600">Light</span>
+        <div>
+          <input type="checkbox" id="toggle" class="hidden" />
+          <label for="toggle" class="cursor-pointer">
+            <div class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-1">
+              <div
+                class="toggle-dot w-4 h-4 rounded-full bg-white shadow-md transform ease-in-out duration-300"
+              ></div>
+            </div>
+          </label>
+        </div>
+        <span class="text-sm text-gray-400">Dark</span>
+      </div>
+
       <!-- Intro -->
       <section
         class="flex flex-col md:flex-row md:gap-16 gap-4 items-center py-4"
@@ -22,18 +39,24 @@
         />
 
         <header>
-          <h1 class="text-5xl my-10 font-bold text-white">Anurag Pramanik</h1>
-          <p class="font-[300] text-secondaryTextColorDark text-base my-4">
+          <h1
+            class="text-5xl my-10 font-bold text-mainTextColorLight dark:text-mainTextColorDark"
+          >
+            Anurag Pramanik
+          </h1>
+          <p
+            class="font-[300] text-secondaryTextColorLight dark:text-secondaryTextColorDark text-base my-4"
+          >
             Software Engineer at
             <a
-              class="font-[300] text-mainLinkColorDark"
+              class="font-[300] text-mainLinkColorLight dark:to-mainLinkColorDark"
               href="https://www.tcs.com/"
               target="_blank"
               >TCS</a
             >, Full Stack Web Developer.
           </p>
           <a
-            class="text-mainTextColorDark my-4 hover:text-mainLinkColorDark hover:transition-all duration-300"
+            class="text-mainTextColorLight dark:text-mainTextColorDark my-4 hover:text-mainLinkColorDark hover:transition-all duration-300"
             href="mailto:p.anurag@outlook.com"
             >👉 p.anurag@outlook.com</a
           >
@@ -43,25 +66,25 @@
       <section class="py-4">
         <div class="flex items-center justify-between">
           <a
-            class="font-light text-secondaryTextColorDark hover:text-mainLinkColorDark transition-all duration-300 text-sm"
+            class="font-light text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorDark transition-all duration-300 text-sm"
             href="https://github.com/apicgg"
             target="_blank"
             >Github</a
           >
           <a
-            class="font-light text-secondaryTextColorDark hover:text-mainLinkColorDark transition-all duration-300 text-sm"
+            class="font-light text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300 text-sm"
             href="https://twitter.com/titas_p"
             target="_blank"
             >Twitter</a
           >
           <a
-            class="font-light text-secondaryTextColorDark hover:text-mainLinkColorDark transition-all duration-300 text-sm"
+            class="font-light text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300 text-sm"
             href="https://www.linkedin.com/in/anurag-pramanik-345843125/"
             target="_blank"
             >Linkedin</a
           >
           <a
-            class="font-light text-secondaryTextColorDark hover:text-mainLinkColorDark transition-all duration-300 text-sm"
+            class="font-light text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300 text-sm"
             href="./assets/anurag-resume-full-stack.pdf"
             target="_blank"
             >Download Resume</a
@@ -70,7 +93,9 @@
       </section>
 
       <section class="py-4">
-        <h2 class="font-bold text-2xl my-5 text-white">
+        <h2
+          class="font-bold text-2xl my-5 text-mainTextColorLight dark:text-mainTextColorDark"
+        >
           Skills & Qualifications
         </h2>
         <ul class="pl-6">
@@ -88,20 +113,24 @@
 
       <!-- Tech Stack -->
       <section class="py-4">
-        <h2 class="font-bold text-2xl my-5 text-white">Tech stack</h2>
+        <h2
+          class="font-bold text-2xl my-5 text-mainTextColorLight dark:text-mainTextColorDark"
+        >
+          Tech stack
+        </h2>
         <div class="flex items-center gap-4 flex-wrap text-base">
           <div
-            class="border border-mainBorderColorDark rounded-[5px] px-4 py-2"
+            class="border border-mainBorderColorLight dark:border-mainBorderColorDark rounded-[5px] px-4 py-2"
           >
             <span>HTML, CSS, JavaScript, NodeJS</span>
           </div>
           <div
-            class="border border-mainBorderColorDark rounded-[5px] px-4 py-2"
+            class="border border-mainBorderColorLight dark:border-mainBorderColorDark rounded-[5px] px-4 py-2"
           >
             <span>React, TailwindCSS, Next JS</span>
           </div>
           <div
-            class="border border-mainBorderColorDark rounded-[5px] px-4 py-2"
+            class="border border-mainBorderColorLight dark:border-mainBorderColorDark rounded-[5px] px-4 py-2"
           >
             <span>MongoDB</span>
           </div>
@@ -110,10 +139,18 @@
 
       <!-- Work -->
       <section class="py-4">
-        <h2 class="font-bold text-2xl my-5 text-white">Work History</h2>
+        <h2
+          class="font-bold text-2xl my-5 text-mainTextColorLight dark:text-mainTextColorDark"
+        >
+          Work History
+        </h2>
 
-        <div class="border border-mainBorderColorDark"></div>
-        <div class="my-12 border-l border-mainBorderColorDark pl-8">
+        <div
+          class="border border-mainBorderColorLight dark:border-mainBorderColorDark"
+        ></div>
+        <div
+          class="my-12 border-l border-mainBorderColorLight dark:border-mainBorderColorDark pl-8"
+        >
           <strong>✔️ Developer | Tata Consultancy Services</strong>
           <p>06/2020 - Present</p>
           <p>
@@ -122,9 +159,13 @@
             Boehringer Ingelheim GmbH)
           </p>
         </div>
-        <div class="border border-mainBorderColorDark"></div>
+        <div
+          class="border border-mainBorderColorLight dark:border-mainBorderColorDark"
+        ></div>
 
-        <div class="my-12 border-l border-mainBorderColorDark pl-8">
+        <div
+          class="my-12 border-l border-mainBorderColorLight dark:border-mainBorderColorDark pl-8"
+        >
           <strong>✔️ Linux Admin | Tata Consultancy Services</strong>
           <p>12/2018 - 06/2020</p>
           <p>
@@ -136,10 +177,14 @@
 
       <!-- Projects -->
       <section class="py-2">
-        <h2 class="font-bold text-2xl my-5 text-white">Projects</h2>
+        <h2
+          class="font-bold text-2xl my-5 text-mainTextColorLight dark:text-mainTextColorDark"
+        >
+          Projects
+        </h2>
         <div>
           <a
-            class="text-secondaryTextColorDark hover:text-mainLinkColorDark transition-all duration-300"
+            class="text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300"
             href="https://anuragp.dev/"
             target="_blank"
             ><span>🏆 </span>Built a portfolio website using React and
@@ -152,7 +197,7 @@
       <span
         >Made with ❤️ by
         <a
-          class="text-secondaryTextColorDark hover:text-mainLinkColorDark transition-all duration-300"
+          class="text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300"
           href="https://anuragp.dev/"
           target="_blank"
           >Anurag</a
