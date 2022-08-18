@@ -760,9 +760,9 @@ video {
   font-weight: 300;
 }
 
-.text-gray-800{
+.text-gray-600{
   --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .text-gray-400{
@@ -783,11 +783,6 @@ video {
 .text-mainLinkColorLight{
   --tw-text-opacity: 1;
   color: rgb(13 162 184 / var(--tw-text-opacity));
-}
-
-.text-gray-600{
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .shadow-md{
@@ -823,14 +818,14 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:text-mainLinkColorLight:hover{
-  --tw-text-opacity: 1;
-  color: rgb(13 162 184 / var(--tw-text-opacity));
-}
-
 .hover\:text-mainLinkColorDark:hover{
   --tw-text-opacity: 1;
   color: rgb(30 190 214 / var(--tw-text-opacity));
+}
+
+.hover\:text-mainLinkColorLight:hover{
+  --tw-text-opacity: 1;
+  color: rgb(13 162 184 / var(--tw-text-opacity));
 }
 
 .hover\:transition-all:hover{
@@ -847,11 +842,6 @@ html {
 .dark .dark\:bg-mainBgColorDark{
   --tw-bg-opacity: 1;
   background-color: rgb(19 20 21 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-mainTextColorDark{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:to-mainLinkColorDark{
