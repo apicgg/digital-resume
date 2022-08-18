@@ -848,10 +848,6 @@ html {
   background-color: rgb(19 20 21 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:to-mainLinkColorDark{
-  --tw-gradient-to: rgb(30, 190, 214);
-}
-
 .dark .dark\:text-mainTextColorDark{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -860,6 +856,11 @@ html {
 .dark .dark\:text-secondaryTextColorDark{
   --tw-text-opacity: 1;
   color: rgb(173 176 177 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-mainLinkColorDark{
+  --tw-text-opacity: 1;
+  color: rgb(30 190 214 / var(--tw-text-opacity));
 }
 
 @media (min-width: 600px){
