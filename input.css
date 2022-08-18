@@ -6,8 +6,12 @@
 
 html {
   font-family: 'Readex Pro';
-  background-color: #131415;
+  /* background-color: #131415; */
   color: #adb0b1;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+#toggle:checked ~ label div.toggle-dot {
+  @apply translate-x-3;
 }
