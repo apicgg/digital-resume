@@ -732,9 +732,9 @@ video {
   text-align: center;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-5xl{
@@ -742,9 +742,9 @@ video {
   line-height: 1;
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-2xl{
@@ -861,6 +861,21 @@ html {
 .dark .dark\:text-mainLinkColorDark{
   --tw-text-opacity: 1;
   color: rgb(30 190 214 / var(--tw-text-opacity));
+}
+
+.dark .group:hover .dark\:group-hover\:bg-mainLinkColorDark{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 190 214 / var(--tw-bg-opacity));
+}
+
+.dark .group:hover .dark\:group-hover\:text-mainLinkColorDark{
+  --tw-text-opacity: 1;
+  color: rgb(30 190 214 / var(--tw-text-opacity));
+}
+
+.dark .group:hover .dark\:group-hover\:text-mainTextColorDark{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 600px){
