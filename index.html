@@ -10,8 +10,6 @@
     <script type="text/javascript" src="main.js" defer></script>
     <title>Anurag Pramanik</title>
   </head>
-
-  <!-- TODO: Fix hover not working on links in dark mode -->
   <body class="bg-mainBgColorLight dark:bg-mainBgColorDark">
     <!-- Main -->
     <main class="max-w-[700px] mx-auto p-4">
@@ -41,7 +39,7 @@
           src="./assets/images/anurag-img-lg.jpg"
         />
 
-        <header>
+        <header class="group">
           <h1
             class="text-5xl my-10 font-bold text-mainTextColorLight dark:text-mainTextColorDark"
           >
@@ -59,7 +57,7 @@
             >, Full Stack Web Developer.
           </p>
           <a
-            class="text-mainTextColorLight dark:text-mainTextColorDark my-4 hover:text-mainLinkColorDark hover:transition-all duration-300"
+            class="text-mainTextColorLight dark:text-mainTextColorDark my-4 hover:text-mainLinkColorLight hover:transition-all duration-300 dark:group-hover:text-mainLinkColorDark"
             href="mailto:p.anurag@outlook.com"
             >👉 p.anurag@outlook.com</a
           >
@@ -68,30 +66,38 @@
 
       <section class="py-4">
         <div class="flex items-center justify-between">
-          <a
-            class="font-light text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300 text-sm"
-            href="https://github.com/apicgg"
-            target="_blank"
-            >Github</a
-          >
-          <a
-            class="font-light text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300 text-sm"
-            href="https://twitter.com/titas_p"
-            target="_blank"
-            >Twitter</a
-          >
-          <a
-            class="font-light text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300 text-sm"
-            href="https://www.linkedin.com/in/anurag-pramanik-345843125/"
-            target="_blank"
-            >Linkedin</a
-          >
-          <a
-            class="font-light text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300 text-sm"
-            href="./assets/anurag-resume-full-stack.pdf"
-            target="_blank"
-            >Download Resume</a
-          >
+          <div class="group">
+            <a
+              class="font-light text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300 text-sm dark:group-hover:text-mainLinkColorDark"
+              href="https://github.com/apicgg"
+              target="_blank"
+              >Github</a
+            >
+          </div>
+          <div class="group">
+            <a
+              class="font-light text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300 text-sm dark:group-hover:text-mainLinkColorDark"
+              href="https://twitter.com/titas_p"
+              target="_blank"
+              >Twitter</a
+            >
+          </div>
+          <div class="group">
+            <a
+              class="font-light text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300 text-sm dark:group-hover:text-mainLinkColorDark"
+              href="https://www.linkedin.com/in/anurag-pramanik-345843125/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </div>
+          <div class="group">
+            <a
+              class="font-light text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300 text-sm dark:group-hover:text-mainLinkColorDark"
+              href="./assets/anurag-resume-full-stack.pdf"
+              target="_blank"
+              >Download Resume</a
+            >
+          </div>
         </div>
       </section>
 
@@ -203,12 +209,14 @@
         </h2>
         <div>
           <a
-            class="text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300"
+            class="text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300 group"
             href="https://anuragp.dev/"
             target="_blank"
-            ><span>🏆 </span>Built a portfolio website using React and
-            TailwindCSS</a
-          >
+            ><span>🏆 </span
+            ><span class="dark:group-hover:text-mainLinkColorDark"
+              >Built a portfolio website using React and TailwindCSS</span
+            >
+          </a>
         </div>
       </section>
     </main>
@@ -216,13 +224,15 @@
       <span
         class="text-secondaryTextColorLight dark:text-secondaryTextColorDark"
         >Made with ❤️ by
-        <a
-          class="text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300"
-          href="https://anuragp.dev/"
-          target="_blank"
-          >Anurag</a
-        ></span
-      >
+        <span class="group">
+          <a
+            class="text-secondaryTextColorLight dark:text-secondaryTextColorDark hover:text-mainLinkColorLight transition-all duration-300 dark:group-hover:text-mainLinkColorDark"
+            href="https://anuragp.dev/"
+            target="_blank"
+            >Anurag</a
+          >
+        </span>
+      </span>
     </footer>
   </body>
 </html>
