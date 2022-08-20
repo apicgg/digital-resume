@@ -1,7 +1,13 @@
 # Digital Resume
 
-> A digital resume website built with HTML, TailwindCSS and Vite based on my actual resume.
-> Feel free to fork the repo and use as a template.
+> A digital resume website built with HTML, TailwindCSS and Vite based on my actual resume. I have used the template from [Dennis Ivy](https://github.com/divanov11/Digital-Resume).
+> Also feel free to fork this repo and use as a template.
+
+## Tech Stack
+
+- HTML
+- [TailwindCSS](https://tailwindcss.com/)
+- JavaScript (for the theme switcher)
 
 ## How To
 
