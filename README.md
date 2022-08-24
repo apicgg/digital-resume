@@ -7,7 +7,7 @@
 
 - HTML
 - [TailwindCSS](https://tailwindcss.com/)
-- JavaScript (for the theme switcher)
+- Vanilla JavaScript (for the theme switcher)
 
 ## How To
 
@@ -18,8 +18,8 @@
 ### Install dependencies and open the dev server
 
 ```bash
-yarn
-yarn start
+npm install
+npm start
 ```
 
 ### Demo - Light Theme
