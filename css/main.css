@@ -822,11 +822,6 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:text-mainLinkColorDark:hover{
-  --tw-text-opacity: 1;
-  color: rgb(30 190 214 / var(--tw-text-opacity));
-}
-
 .hover\:text-mainLinkColorLight:hover{
   --tw-text-opacity: 1;
   color: rgb(13 162 184 / var(--tw-text-opacity));
@@ -863,19 +858,9 @@ html {
   color: rgb(30 190 214 / var(--tw-text-opacity));
 }
 
-.dark .group:hover .dark\:group-hover\:bg-mainLinkColorDark{
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 190 214 / var(--tw-bg-opacity));
-}
-
 .dark .group:hover .dark\:group-hover\:text-mainLinkColorDark{
   --tw-text-opacity: 1;
   color: rgb(30 190 214 / var(--tw-text-opacity));
-}
-
-.dark .group:hover .dark\:group-hover\:text-mainTextColorDark{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 600px){

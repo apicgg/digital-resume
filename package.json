@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch",
-    "start": "concurrently \"yarn dev\" \"yarn watch\""
+    "start": "concurrently \"npm run dev\" \"npm run watch\""
   },
   "devDependencies": {
     "concurrently": "^7.3.0",
