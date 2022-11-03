@@ -1,26 +1,26 @@
-const checkbox = document.querySelector('#toggle')
-const html = document.querySelector('html')
-const userTheme = localStorage.getItem('theme')
+const checkbox = document.querySelector("#toggle");
+const html = document.querySelector("html");
+const userTheme = localStorage.getItem("theme");
 
 const enableDarkMode = () => {
-  html.classList.add('dark')
-  localStorage.setItem('theme', 'dark')
-}
+  html.classList.add("dark");
+  localStorage.setItem("theme", "dark");
+};
 
 const disableDarkMode = () => {
-  html.classList.remove('dark')
-  localStorage.removeItem('theme')
+  html.classList.remove("dark");
+  localStorage.removeItem("theme");
+};
+
+if (userTheme === "dark") {
+  enableDarkMode();
+  checkbox.checked = true;
 }
 
-if (userTheme === 'dark') {
-  enableDarkMode()
-  checkbox.checked = true
-}
-
-checkbox.addEventListener('click', () => {
+checkbox.addEventListener("click", () => {
   if (checkbox.checked) {
-    enableDarkMode()
+    enableDarkMode();
   } else {
-    disableDarkMode()
+    disableDarkMode();
   }
-})
+});
