@@ -11,7 +11,7 @@
 
 ## How To
 
-> If you are using vite as dev server make sure to add `type="module"` in the script tag. For deployment in GitHub pages use `type="text/javascript"` in the script tag.
+> If you are using vite as development server like me make sure to add `type="module"` in the script tag. For deployment on GitHub pages use `type="text/javascript"` in the script tag.
 
 ## Usage
 
@@ -31,3 +31,13 @@ npm start
 ![demo-dark](https://user-images.githubusercontent.com/78271602/185386816-97207c1a-b694-411c-b70a-df2689f729b8.png)
 
 [Digital Resume](https://apicgg.github.io/digital-resume/)
+
+## License
+
+MIT License.
+
+1. You are free to use this code as inspiration.
+2. Please do not copy it directly.
+3. Crediting the author is appreciated.
+
+Please review the [License](https://github.com/apicgg/digital-resume/blob/main/LICENSE) and remove all of my personal information (resume, images, etc.).
